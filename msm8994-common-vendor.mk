@@ -5,6 +5,9 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/msm8994-common
 
+PRODUCT_PACKAGES += \
+    libwvdrmengine
+
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8994-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/xiaomi/msm8994-common/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \

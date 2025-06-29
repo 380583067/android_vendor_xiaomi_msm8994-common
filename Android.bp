@@ -242,3 +242,28 @@ dex_import {
 	soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+     name: "libwvdrmengine",
+     check_elf_files: false,
+     strip: {
+         none: true,
+     },
+     shared_libs: [
+         "libbase",
+         "libcrypto",
+         "liblog",
+         "libstagefright_foundation",
+         "libutils",
+         "libc++",
+         "libc",
+         "libm",
+     ],
+     target: {
+         android_arm: {
+             srcs: ["proprietary/vendor/lib/mediadrm/libwvdrmengine.so"],
+         },
+     },
+     owner: "xiaomi",
+     prefer: true,
+     soc_specific: true,
+ }
